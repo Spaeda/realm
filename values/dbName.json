@@ -1,0 +1,5 @@
+{
+  "name": "dbName",
+  "value": "__DbName__",
+  "from_secret": false
+}

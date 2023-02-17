@@ -1,0 +1,35 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "composition": {
+            "bsonType": "objectId"
+        },
+        "hidden": {
+            "bsonType": "bool"
+        },
+        "like": {
+            "bsonType": "bool"
+        },
+        "user": {
+            "bsonType": "string"
+        },
+        "views": {
+            "bsonType": "int"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "user",
+        "composition",
+        "views",
+        "like"
+    ],
+    "title": "UserInteraction"
+}

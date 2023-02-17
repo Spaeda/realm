@@ -1,0 +1,32 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "composition": {
+            "bsonType": "objectId"
+        },
+        "install": {
+            "bsonType": "string"
+        },
+        "session": {
+            "bsonType": "string"
+        },
+        "views": {
+            "bsonType": "int"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "session",
+        "install",
+        "composition",
+        "views"
+    ],
+    "title": "GuestInteraction"
+}

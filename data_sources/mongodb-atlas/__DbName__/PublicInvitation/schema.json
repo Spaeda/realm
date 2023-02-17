@@ -1,0 +1,30 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "composition": {
+            "bsonType": "objectId"
+        },
+        "end": {
+            "bsonType": "date"
+        },
+        "start": {
+            "bsonType": "date"
+        },
+        "token": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "composition",
+        "token"
+    ],
+    "title": "PublicInvitation"
+}

@@ -1,0 +1,5 @@
+{
+  "name": "apiUrl",
+  "value": "__ApiUrl__",
+  "from_secret": false
+}

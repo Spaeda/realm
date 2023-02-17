@@ -1,0 +1,40 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "created": {
+            "bsonType": "date"
+        },
+        "notifyComment": {
+            "bsonType": "bool"
+        },
+        "notifyCreation": {
+            "bsonType": "bool"
+        },
+        "notifyLike": {
+            "bsonType": "bool"
+        },
+        "privateAccess": {
+            "bsonType": "bool"
+        },
+        "source": {
+            "bsonType": "string"
+        },
+        "target": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "created",
+        "source",
+        "target"
+    ],
+    "title": "UserRelationship"
+}

@@ -1,0 +1,24 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "string"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "composition": {
+            "bsonType": "objectId"
+        },
+        "user": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "user",
+        "composition"
+    ],
+    "title": "CompositionAccess"
+}

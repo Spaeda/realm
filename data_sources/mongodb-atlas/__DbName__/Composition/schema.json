@@ -1,0 +1,298 @@
+{
+    "bsonType": "object",
+    "properties": {
+        "_id": {
+            "bsonType": "objectId"
+        },
+        "_partition": {
+            "bsonType": "string"
+        },
+        "accuracy": {
+            "bsonType": "object",
+            "properties": {
+                "heading": {
+                    "bsonType": "double"
+                },
+                "horizontal": {
+                    "bsonType": "double"
+                },
+                "vertical": {
+                    "bsonType": "double"
+                }
+            },
+            "required": [
+                "horizontal",
+                "vertical",
+                "heading"
+            ],
+            "title": "Accuracy"
+        },
+        "altitude": {
+            "bsonType": "double"
+        },
+        "anchor": {
+            "bsonType": "string"
+        },
+        "banned": {
+            "bsonType": "bool"
+        },
+        "created": {
+            "bsonType": "date"
+        },
+        "desc": {
+            "bsonType": "string"
+        },
+        "end": {
+            "bsonType": "date"
+        },
+        "hashtags": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            },
+            "uniqueItems": true
+        },
+        "heading": {
+            "bsonType": "double"
+        },
+        "latitude": {
+            "bsonType": "double"
+        },
+        "likes": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "string"
+            },
+            "uniqueItems": true
+        },
+        "longitude": {
+            "bsonType": "double"
+        },
+        "name": {
+            "bsonType": "string"
+        },
+        "owner": {
+            "bsonType": "string"
+        },
+        "position": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "double"
+            },
+            "maxItems": 3,
+            "minItems": 3
+        },
+        "ready": {
+            "bsonType": "bool"
+        },
+        "rotation": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "double"
+            },
+            "maxItems": 4,
+            "minItems": 4
+        },
+        "scenes": {
+            "bsonType": "array",
+            "items": {
+                "bsonType": "object",
+                "properties": {
+                    "addons": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "id": {
+                                    "bsonType": "objectId"
+                                },
+                                "parameters": {
+                                    "additionalProperties": true,
+                                    "bsonType": "object"
+                                },
+                                "type": {
+                                    "bsonType": "string"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type"
+                            ],
+                            "title": "Addon"
+                        }
+                    },
+                    "assets": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "id": {
+                                    "bsonType": "objectId"
+                                },
+                                "name": {
+                                    "bsonType": "string"
+                                },
+                                "online": {
+                                    "bsonType": "bool"
+                                },
+                                "parameters": {
+                                    "additionalProperties": true,
+                                    "bsonType": "object"
+                                },
+                                "provider": {
+                                    "bsonType": "string"
+                                },
+                                "scale": {
+                                    "bsonType": "array",
+                                    "items": {
+                                        "bsonType": "double"
+                                    },
+                                    "maxItems": 3,
+                                    "minItems": 3
+                                },
+                                "size": {
+                                    "bsonType": "array",
+                                    "items": {
+                                        "bsonType": "double"
+                                    },
+                                    "maxItems": 3,
+                                    "minItems": 3
+                                },
+                                "type": {
+                                    "bsonType": "string"
+                                },
+                                "url": {
+                                    "bsonType": "string"
+                                },
+                                "weight": {
+                                    "bsonType": "double"
+                                }
+                            },
+                            "required": [
+                                "id",
+                                "type",
+                                "name"
+                            ],
+                            "title": "Asset"
+                        },
+                        "minItems": 1
+                    },
+                    "effects": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "object",
+                            "properties": {
+                                "action": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "assets": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "objectId"
+                                            },
+                                            "uniqueItems": true
+                                        },
+                                        "parameters": {
+                                            "additionalProperties": true,
+                                            "bsonType": "object"
+                                        },
+                                        "type": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "type"
+                                    ],
+                                    "title": "EffectType"
+                                },
+                                "id": {
+                                    "bsonType": "objectId"
+                                },
+                                "trigger": {
+                                    "bsonType": "object",
+                                    "properties": {
+                                        "assets": {
+                                            "bsonType": "array",
+                                            "items": {
+                                                "bsonType": "objectId"
+                                            },
+                                            "uniqueItems": true
+                                        },
+                                        "parameters": {
+                                            "additionalProperties": true,
+                                            "bsonType": "object"
+                                        },
+                                        "type": {
+                                            "bsonType": "string"
+                                        }
+                                    },
+                                    "required": [
+                                        "type"
+                                    ],
+                                    "title": "EffectType"
+                                }
+                            },
+                            "required": [
+                                "id"
+                            ],
+                            "title": "Effect"
+                        }
+                    },
+                    "id": {
+                        "bsonType": "objectId"
+                    },
+                    "position": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "double"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                    },
+                    "rotation": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "double"
+                        },
+                        "maxItems": 4,
+                        "minItems": 4
+                    },
+                    "scale": {
+                        "bsonType": "array",
+                        "items": {
+                            "bsonType": "double"
+                        },
+                        "maxItems": 3,
+                        "minItems": 3
+                    },
+                    "type": {
+                        "bsonType": "string"
+                    }
+                },
+                "required": [
+                    "id",
+                    "type"
+                ],
+                "title": "EmbeddedScene"
+            },
+            "minItems": 1
+        },
+        "start": {
+            "bsonType": "date"
+        },
+        "thumbnail": {
+            "bsonType": "string"
+        },
+        "visibility": {
+            "bsonType": "string"
+        }
+    },
+    "required": [
+        "_id",
+        "_partition",
+        "anchor",
+        "name",
+        "created"
+    ],
+    "title": "Composition"
+}
