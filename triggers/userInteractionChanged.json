@@ -8,7 +8,7 @@
         ],
         "database": "__DbName__",
         "collection": "UserInteraction",
-        "service_name": "",
+        "service_name": "mongodb-atlas",
         "match": {},
         "project": {},
         "full_document": true,
