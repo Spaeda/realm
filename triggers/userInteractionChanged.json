@@ -1,5 +1,5 @@
 {
-    "name": "compositionAccessInserted",
+    "name": "userInteractionChanged",
     "type": "DATABASE",
     "config": {
         "operation_types": [
