@@ -1,7 +1,7 @@
 {
-    "app_id": "application-0-accnl",
+    "app_id": "application-1-ropyc",
     "config_version": 20210101,
-    "name": "Application-0",
+    "name": "Application-1",
     "location": "DE-FF",
     "provider_region": "azure-westeurope",
     "deployment_model": "LOCAL"
