@@ -2,34 +2,6 @@
     "api-key": {
         "name": "api-key",
         "type": "api-key",
-        "disabled": false
-    },
-    "custom-token": {
-        "name": "custom-token",
-        "type": "custom-token",
-        "config": {
-            "audience": [
-                "wanderland"
-            ],
-            "jwkURI": "__IdentityUrl__/.well-known/openid-configuration/jwks",
-            "signingAlgorithm": "",
-            "useJWKURI": true
-        },
-        "secret_config": {
-            "signingKeys": []
-        },
-        "disabled": false,
-        "metadata_fields": [
-            {
-                "required": false,
-                "name": "sub",
-                "field_name": "externalId"
-            },
-            {
-                "required": false,
-                "name": "preferred_username",
-                "field_name": "name"
-            }
-        ]
+        "disabled": true
     }
 }

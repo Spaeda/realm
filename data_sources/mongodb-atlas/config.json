@@ -2,7 +2,7 @@
     "name": "mongodb-atlas",
     "type": "mongodb-atlas",
     "config": {
-        "clusterName": "__ClusterName__",
+        "clusterName": "Rainbow-Dev",
         "readPreference": "primary",
         "wireProtocolEnabled": false
     },
